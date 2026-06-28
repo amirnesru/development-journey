@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(234, 198, 150);
+    margin:0 auto;
+    height: 100vh;              
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+}
+
+
+.main {
+    background-color: black;
+    color: white;
+    width: 500px;
+    max-width: 90%;
+    min-height:60vh;
+    height: auto;
+    padding:30px 10px 10px 10px;
+    text-align: center;
+    
+}
+
+form {
+    margin: 5px;
+}    
+input,#add-button {
+    height: 2.5rem;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+input {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#add-button {
+    background: orange;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 3px;
+}
+
+input:hover{
+    background-color: rgb(144, 146, 174)
+}
+
+#add-button:hover {
+ background-color: rgb(88, 100, 205);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin: 5px 0;
+    background: #5f5e5e;
+    color: white;
+    border-radius: 6px;
+    overflow-wrap: break-word;  
+}
+
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    opacity: 0.7;
+}
+
+.done{
+    text-decoration: line-through;
+    background-color: rgb(175, 247, 247);
+    color: black;
+}
+input:focus {
+    outline: none;
+    border: 2px solid orange;
+}

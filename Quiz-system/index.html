@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-system</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="quiz-screen">
+        <header>
+            <div>
+                <h1>quiz-challenge</h1>
+                <button id="dark-mode-btn">dark mode</button>
+                <button id="pause-btn">pause quiz</button>
+            </div>
+        </header>
+        <div>
+            <div id="question-number">question "current question" of 10 </div>
+            <div id="timer">30</div>
+        </div>
+        <div id="progress-bar">Progress: 0%</div>
+        <div>
+            <p id="question-text">question-text</p>
+            <div id="options-container">
+                <button class="option">A</button>
+                <button class="option">B</button>
+                <button class="option">C</button>
+                <button class="option">D</button>
+            </div>
+        </div>
+        <div>
+            <div id="answered">answered</div>
+            <div id="remaining">remaining</div>
+        </div>
+        <div id="navigation">
+         <button id="prev-btn">previous</button>
+         <button id="next-btn">next</button>
+        </div> 
+        <div><button class="restart">restart quiz</button></div>
+    </div>
+
+<!-- result-screen is hidden  -->
+    <div id="result-screen">
+        <h1>quiz complted!!</h1>
+        <div>
+            <div id="total">total questions</div>
+            <div id="correct">correct answers</div>
+            <div id="incorrect">incorrect answers</div>
+            <div id="unanswered">unanswered questions</div>
+        </div>
+        <div>
+            <div id="score">score</div>
+            <div id="percent">percentage</div>
+        </div>
+        <div id="performance">message based on performance</div>
+        <button class="restart">restart quiz</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

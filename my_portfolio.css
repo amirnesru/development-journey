@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color:rgb(242, 240, 240);
+  font-family:system-ui, "Bitcount Grid Double";
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(42, 66, 42);
+    color: white;
+    text-decoration: none;
+}
+
+.header_nav {
+    background-color: rgb(19, 8, 8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem ;
+    align-items: center;
+    margin-bottom: 1100px;  
+}
+
+.header_links {
+    display:flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+.header_links a {
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 15rem;
+}
+
+#username {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.my_profile {
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(143, 181, 213);
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+#my_image img {
+    margin-top: 100px;
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:3px dotted rgb(55, 24, 24) ;
+}
+
+#my_name h1 {
+    width:100%;
+    height: 100%;
+    color: rgb(33, 139, 7);
+    text-align: center;
+    align-items:center;
+    padding-left: 50px;
+    margin-top: 180px;
+    margin-right: 100px;
+    font-weight: bold;
+}
+
+main {
+    margin: 1.5rem;
+}
+
+.wellcome {
+    font-family:  "Bitcount Grid Double",system-ui;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.bio{
+    background-color: rgb(196, 238, 238);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.one {
+    width: 30%;
+}
+
+.one img{
+    width:100%;
+    border-radius: 20px;
+    border: 1px solid black;
+    object-fit: cover;
+    align-items: center;
+}
+
+.two {
+    width: 70%;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1.5rem 0;
+    text-shadow: 2px 2px 5px gray;
+}
+
+#my_bio {
+    background-color: rgb(213, 208, 208);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    padding: 0.5rem;
+    max-width: 90%;
+}
+
+.bold {
+ font-weight: bold;
+}
+
+.hobbies_skills {
+    background-color: rgb(236, 232, 226);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 4rem;
+    padding: 2rem;
+}
+
+ul {
+  list-style: square;
+  color: brown;
+  padding-left: 1.5rem;
+}
+
+li{
+    margin-bottom: 2rem;
+}
+.hobbies {
+grid-column: 1/2;
+}
+
+.skills{
+    grid-column: 2/3;
+}
+#my_suggestion{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.suggestion {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+    margin: 5px 75px;
+    max-width: 700px; 
+}
+.sug_1 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.sug_2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.sug_3 {
+    grid-column: span 1;
+    grid-row: span 1;
+    
+}
+.sug_3 img ,.sug_2 iframe ,.sug_1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;  
+}
+
+.study {
+    background-color: rgb(213, 174, 174);
+    margin: 20px;
+}
+
+ol{
+    list-style:lower-greek;
+    color: blue;
+    background-color: rgb(216, 209, 222);
+}
+
+table,th,td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+th,td{
+    padding: 10px;
+}
+
+th {
+    color: yellowgreen;
+    font-weight: bold;
+    background-color: gray;
+}
+
+tr:hover {
+  background-color: #baadad;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.my_form{
+    width: 100%;
+    max-width:350px;
+}
+    
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    outline: none;
+}
+
+button{
+    background-color: rgb(126, 229, 247);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    color: brown;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover{
+    background-color: rgb(102, 135, 135);
+    color: white;
+}
+
+input:hover,
+textarea:hover {
+    background-color: rgb(222, 172, 163);   
+}
+
+#bottom {
+    background-color: rgb(4, 4, 97);
+    color: white;
+    padding: 20px 0px;
+    margin-top: 40px;
+    border-top: 3px solid #444;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+#bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+#bottom a:hover {
+    background-color: black;
+    color: rgb(197, 236, 42);
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+    .bio {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
+    #my_bio {
+        font-size: 0.8rem;
+    }
+    .suggestion {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+  .header_links {
+    flex-direction: column;
+  }
+
+  .my_form {
+    width: 100%;
+  }
+
+  .suggestion {
+    grid-template-columns: 1fr;
+  }
+}
